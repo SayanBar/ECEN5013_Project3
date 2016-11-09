@@ -117,7 +117,7 @@ Allocating common symbols
 Common symbol       size              file
 
 errno               0x4               c:/freescale/kds_v3/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-reent.o)
-destination         0x3e8             ./Sources/main.o
+destination         0x64              ./Sources/main.o
 drs_val             0x1               ./Includes/mcg.o
 dmx32_val           0x1               ./Includes/mcg.o
 
@@ -1020,56 +1020,56 @@ LOAD c:/freescale/kds_v3/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/armv6-m/cr
                 0x1ffff000                . = ALIGN (0x8)
                 0x1ffff000                _mtb_end = .
 
-.data           0x1ffff000      0x44c load address 0x0000173c
+.data           0x1ffff000       0xc8 load address 0x0000173c
                 0x1ffff000                . = ALIGN (0x4)
                 0x1ffff000                __DATA_RAM = .
                 0x1ffff000                __data_start__ = .
  *(.data)
  *(.data*)
- .data.p        0x1ffff000      0x3e8 ./Sources/main.o
+ .data.p        0x1ffff000       0x64 ./Sources/main.o
                 0x1ffff000                p
  .data.impure_data
-                0x1ffff3e8       0x60 c:/freescale/kds_v3/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-impure.o)
+                0x1ffff064       0x60 c:/freescale/kds_v3/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-impure.o)
  *(.jcr*)
- .jcr           0x1ffff448        0x0 c:/freescale/kds_v3/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/armv6-m/crtbegin.o
- .jcr           0x1ffff448        0x4 c:/freescale/kds_v3/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/armv6-m/crtend.o
-                0x1ffff44c                . = ALIGN (0x4)
-                0x1ffff44c                __data_end__ = .
-                0x00001b88                __DATA_END = (__DATA_ROM + (__data_end__ - __data_start__))
+ .jcr           0x1ffff0c4        0x0 c:/freescale/kds_v3/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/armv6-m/crtbegin.o
+ .jcr           0x1ffff0c4        0x4 c:/freescale/kds_v3/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/armv6-m/crtend.o
+                0x1ffff0c8                . = ALIGN (0x4)
+                0x1ffff0c8                __data_end__ = .
+                0x00001804                __DATA_END = (__DATA_ROM + (__data_end__ - __data_start__))
 
-.igot.plt       0x1ffff44c        0x0 load address 0x00001b88
+.igot.plt       0x1ffff0c8        0x0 load address 0x00001804
  .igot.plt      0x00000000        0x0 c:/freescale/kds_v3/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/armv6-m/crtbegin.o
 
-.bss            0x1ffff44c      0x408 load address 0x00001b88
-                0x1ffff44c                . = ALIGN (0x4)
-                0x1ffff44c                __START_BSS = .
-                0x1ffff44c                __bss_start__ = .
+.bss            0x1ffff0c8       0x84 load address 0x00001804
+                0x1ffff0c8                . = ALIGN (0x4)
+                0x1ffff0c8                __START_BSS = .
+                0x1ffff0c8                __bss_start__ = .
  *(.bss)
- .bss           0x1ffff44c       0x1c c:/freescale/kds_v3/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/armv6-m/crtbegin.o
+ .bss           0x1ffff0c8       0x1c c:/freescale/kds_v3/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/armv6-m/crtbegin.o
  *(.bss*)
- .bss.count     0x1ffff468        0x4 ./Sources/main.o
-                0x1ffff468                count
+ .bss.count     0x1ffff0e4        0x4 ./Sources/main.o
+                0x1ffff0e4                count
  *(COMMON)
- COMMON         0x1ffff46c      0x3e8 ./Sources/main.o
-                0x1ffff46c                destination
-                0x1ffff854                . = ALIGN (0x4)
-                0x1ffff854                __bss_end__ = .
-                0x1ffff854                __END_BSS = .
+ COMMON         0x1ffff0e8       0x64 ./Sources/main.o
+                0x1ffff0e8                destination
+                0x1ffff14c                . = ALIGN (0x4)
+                0x1ffff14c                __bss_end__ = .
+                0x1ffff14c                __END_BSS = .
 
-.heap           0x1ffff854      0x404 load address 0x00001f90
-                0x1ffff858                . = ALIGN (0x8)
- *fill*         0x1ffff854        0x4 
-                0x1ffff858                __end__ = .
-                0x1ffff858                PROVIDE (end, .)
-                0x1ffff858                __HeapBase = .
-                0x1ffffc58                . = (. + HEAP_SIZE)
- *fill*         0x1ffff858      0x400 
-                0x1ffffc58                __HeapLimit = .
+.heap           0x1ffff14c      0x404 load address 0x00001888
+                0x1ffff150                . = ALIGN (0x8)
+ *fill*         0x1ffff14c        0x4 
+                0x1ffff150                __end__ = .
+                0x1ffff150                PROVIDE (end, .)
+                0x1ffff150                __HeapBase = .
+                0x1ffff550                . = (. + HEAP_SIZE)
+ *fill*         0x1ffff150      0x400 
+                0x1ffff550                __HeapLimit = .
 
-.stack          0x1ffffc58      0x400 load address 0x00002394
-                0x1ffffc58                . = ALIGN (0x8)
-                0x20000058                . = (. + STACK_SIZE)
- *fill*         0x1ffffc58      0x400 
+.stack          0x1ffff550      0x400 load address 0x00001c8c
+                0x1ffff550                . = ALIGN (0x8)
+                0x1ffff950                . = (. + STACK_SIZE)
+ *fill*         0x1ffff550      0x400 
                 0x20003000                __StackTop = (ORIGIN (m_data) + 0x4000)
                 0x20002c00                __StackLimit = (__StackTop - STACK_SIZE)
                 0x20003000                PROVIDE (__stack, __StackTop)
@@ -1124,11 +1124,11 @@ LOAD c:/freescale/kds_v3/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/armv6-m/cr
                 0x00000001                ASSERT ((__StackLimit >= __HeapLimit), region m_data overflowed with stack and heap)
 OUTPUT(DMA.elf elf32-littlearm)
 
-.debug_info     0x00000000     0x1c23
- .debug_info    0x00000000      0x914 ./Sources/main.o
- .debug_info    0x00000914       0x82 ./Project_Settings/Startup_Code/startup_MKL25Z4.o
- .debug_info    0x00000996      0x3ed ./Project_Settings/Startup_Code/system_MKL25Z4.o
- .debug_info    0x00000d83      0xea0 ./Includes/mcg.o
+.debug_info     0x00000000     0x1c22
+ .debug_info    0x00000000      0x913 ./Sources/main.o
+ .debug_info    0x00000913       0x82 ./Project_Settings/Startup_Code/startup_MKL25Z4.o
+ .debug_info    0x00000995      0x3ed ./Project_Settings/Startup_Code/system_MKL25Z4.o
+ .debug_info    0x00000d82      0xea0 ./Includes/mcg.o
 
 .debug_abbrev   0x00000000      0x4f0
  .debug_abbrev  0x00000000      0x20d ./Sources/main.o
