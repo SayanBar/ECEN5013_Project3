@@ -117,7 +117,7 @@ Allocating common symbols
 Common symbol       size              file
 
 errno               0x4               c:/freescale/kds_v3/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-reent.o)
-destination         0xe38             ./Sources/main.o
+destination         0x3e8             ./Sources/main.o
 drs_val             0x1               ./Includes/mcg.o
 dmx32_val           0x1               ./Includes/mcg.o
 
@@ -817,7 +817,7 @@ LOAD c:/freescale/kds_v3/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/armv6-m/cr
  .FlashConfig   0x00000400       0x10 ./Project_Settings/Startup_Code/startup_MKL25Z4.o
                 0x00000410                . = ALIGN (0x4)
 
-.text           0x00000410     0x1334
+.text           0x00000410     0x131c
                 0x00000410                . = ALIGN (0x4)
  *(.text)
  .text          0x00000410       0x60 c:/freescale/kds_v3/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/armv6-m/crtbegin.o
@@ -900,118 +900,118 @@ LOAD c:/freescale/kds_v3/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/armv6-m/cr
                 0x00000f10       0x30 ./Sources/main.o
                 0x00000f10                TPM0_IRQHandler
  .text.DMA_setup
-                0x00000f40       0xb0 ./Sources/main.o
+                0x00000f40       0x98 ./Sources/main.o
                 0x00000f40                DMA_setup
- .text.main     0x00000ff0       0xb8 ./Sources/main.o
-                0x00000ff0                main
+ .text.main     0x00000fd8       0xb8 ./Sources/main.o
+                0x00000fd8                main
  .text.SystemInit
-                0x000010a8       0x18 ./Project_Settings/Startup_Code/system_MKL25Z4.o
-                0x000010a8                SystemInit
+                0x00001090       0x18 ./Project_Settings/Startup_Code/system_MKL25Z4.o
+                0x00001090                SystemInit
  .text.pll_init
-                0x000010c0      0x538 ./Includes/mcg.o
-                0x000010c0                pll_init
- .text.exit     0x000015f8       0x2c c:/freescale/kds_v3/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-exit.o)
-                0x000015f8                exit
+                0x000010a8      0x538 ./Includes/mcg.o
+                0x000010a8                pll_init
+ .text.exit     0x000015e0       0x2c c:/freescale/kds_v3/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-exit.o)
+                0x000015e0                exit
  .text.__libc_init_array
-                0x00001624       0x4c c:/freescale/kds_v3/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-init.o)
-                0x00001624                __libc_init_array
- .text.memset   0x00001670       0x10 c:/freescale/kds_v3/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-memset.o)
-                0x00001670                memset
- .text._exit    0x00001680        0x4 c:/freescale/kds_v3/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libnosys.a(_exit.o)
-                0x00001680                _exit
+                0x0000160c       0x4c c:/freescale/kds_v3/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-init.o)
+                0x0000160c                __libc_init_array
+ .text.memset   0x00001658       0x10 c:/freescale/kds_v3/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-memset.o)
+                0x00001658                memset
+ .text._exit    0x00001668        0x4 c:/freescale/kds_v3/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libnosys.a(_exit.o)
+                0x00001668                _exit
  *(.rodata)
- .rodata        0x00001684       0x40 c:/freescale/kds_v3/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/armv6-m\libgcc.a(divdf3.o)
+ .rodata        0x0000166c       0x40 c:/freescale/kds_v3/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/armv6-m\libgcc.a(divdf3.o)
  *(.rodata*)
  .rodata.str1.1
-                0x000016c4        0x2 c:/freescale/kds_v3/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-impure.o)
- *fill*         0x000016c6        0x2 
+                0x000016ac        0x2 c:/freescale/kds_v3/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-impure.o)
+ *fill*         0x000016ae        0x2 
  .rodata._global_impure_ptr
-                0x000016c8        0x4 c:/freescale/kds_v3/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-impure.o)
-                0x000016c8                _global_impure_ptr
+                0x000016b0        0x4 c:/freescale/kds_v3/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-impure.o)
+                0x000016b0                _global_impure_ptr
  .rodata.__sf_fake_stdin
-                0x000016cc       0x20 c:/freescale/kds_v3/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-findfp.o)
-                0x000016cc                __sf_fake_stdin
+                0x000016b4       0x20 c:/freescale/kds_v3/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-findfp.o)
+                0x000016b4                __sf_fake_stdin
  .rodata.__sf_fake_stdout
-                0x000016ec       0x20 c:/freescale/kds_v3/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-findfp.o)
-                0x000016ec                __sf_fake_stdout
+                0x000016d4       0x20 c:/freescale/kds_v3/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-findfp.o)
+                0x000016d4                __sf_fake_stdout
  .rodata.__sf_fake_stderr
-                0x0000170c       0x20 c:/freescale/kds_v3/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-findfp.o)
-                0x0000170c                __sf_fake_stderr
+                0x000016f4       0x20 c:/freescale/kds_v3/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-findfp.o)
+                0x000016f4                __sf_fake_stderr
  *(.glue_7)
  .glue_7        0x00000000        0x0 linker stubs
  *(.glue_7t)
  .glue_7t       0x00000000        0x0 linker stubs
  *(.eh_frame)
- .eh_frame      0x0000172c        0x0 c:/freescale/kds_v3/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/armv6-m/crtbegin.o
+ .eh_frame      0x00001714        0x0 c:/freescale/kds_v3/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/armv6-m/crtbegin.o
  *(.init)
- .init          0x0000172c        0x4 c:/freescale/kds_v3/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/armv6-m/crti.o
-                0x0000172c                _init
- .init          0x00001730        0x8 c:/freescale/kds_v3/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/armv6-m/crtn.o
+ .init          0x00001714        0x4 c:/freescale/kds_v3/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/armv6-m/crti.o
+                0x00001714                _init
+ .init          0x00001718        0x8 c:/freescale/kds_v3/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/armv6-m/crtn.o
  *(.fini)
- .fini          0x00001738        0x4 c:/freescale/kds_v3/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/armv6-m/crti.o
-                0x00001738                _fini
- .fini          0x0000173c        0x8 c:/freescale/kds_v3/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/armv6-m/crtn.o
-                0x00001744                . = ALIGN (0x4)
+ .fini          0x00001720        0x4 c:/freescale/kds_v3/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/armv6-m/crti.o
+                0x00001720                _fini
+ .fini          0x00001724        0x8 c:/freescale/kds_v3/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/armv6-m/crtn.o
+                0x0000172c                . = ALIGN (0x4)
 
-.vfp11_veneer   0x00001744        0x0
+.vfp11_veneer   0x0000172c        0x0
  .vfp11_veneer  0x00000000        0x0 linker stubs
 
-.v4_bx          0x00001744        0x0
+.v4_bx          0x0000172c        0x0
  .v4_bx         0x00000000        0x0 linker stubs
 
-.iplt           0x00001744        0x0
+.iplt           0x0000172c        0x0
  .iplt          0x00000000        0x0 c:/freescale/kds_v3/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/armv6-m/crtbegin.o
 
 .ARM.extab
  *(.ARM.extab* .gnu.linkonce.armextab.*)
 
-.ARM            0x00001744        0x8
-                0x00001744                __exidx_start = .
+.ARM            0x0000172c        0x8
+                0x0000172c                __exidx_start = .
  *(.ARM.exidx*)
- .ARM.exidx     0x00001744        0x8 c:/freescale/kds_v3/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m/crt0.o
-                0x0000174c                __exidx_end = .
+ .ARM.exidx     0x0000172c        0x8 c:/freescale/kds_v3/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m/crt0.o
+                0x00001734                __exidx_end = .
 
-.rel.dyn        0x0000174c        0x0
+.rel.dyn        0x00001734        0x0
  .rel.iplt      0x00000000        0x0 c:/freescale/kds_v3/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/armv6-m/crtbegin.o
 
-.ctors          0x0000174c        0x0
-                0x0000174c                __CTOR_LIST__ = .
+.ctors          0x00001734        0x0
+                0x00001734                __CTOR_LIST__ = .
  *crtbegin.o(.ctors)
  *crtbegin?.o(.ctors)
  *(EXCLUDE_FILE(*crtend.o *crtend?.o) .ctors)
  *(SORT(.ctors.*))
  *(.ctors)
-                0x0000174c                __CTOR_END__ = .
+                0x00001734                __CTOR_END__ = .
 
-.dtors          0x0000174c        0x0
-                0x0000174c                __DTOR_LIST__ = .
+.dtors          0x00001734        0x0
+                0x00001734                __DTOR_LIST__ = .
  *crtbegin.o(.dtors)
  *crtbegin?.o(.dtors)
  *(EXCLUDE_FILE(*crtend.o *crtend?.o) .dtors)
  *(SORT(.dtors.*))
  *(.dtors)
-                0x0000174c                __DTOR_END__ = .
+                0x00001734                __DTOR_END__ = .
 
-.preinit_array  0x0000174c        0x0
-                0x0000174c                PROVIDE (__preinit_array_start, .)
+.preinit_array  0x00001734        0x0
+                0x00001734                PROVIDE (__preinit_array_start, .)
  *(.preinit_array*)
-                0x0000174c                PROVIDE (__preinit_array_end, .)
+                0x00001734                PROVIDE (__preinit_array_end, .)
 
-.init_array     0x0000174c        0x4
-                0x0000174c                PROVIDE (__init_array_start, .)
+.init_array     0x00001734        0x4
+                0x00001734                PROVIDE (__init_array_start, .)
  *(SORT(.init_array.*))
  *(.init_array*)
- .init_array    0x0000174c        0x4 c:/freescale/kds_v3/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/armv6-m/crtbegin.o
-                0x00001750                PROVIDE (__init_array_end, .)
+ .init_array    0x00001734        0x4 c:/freescale/kds_v3/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/armv6-m/crtbegin.o
+                0x00001738                PROVIDE (__init_array_end, .)
 
-.fini_array     0x00001750        0x4
-                0x00001750                PROVIDE (__fini_array_start, .)
+.fini_array     0x00001738        0x4
+                0x00001738                PROVIDE (__fini_array_start, .)
  *(SORT(.fini_array.*))
  *(.fini_array*)
- .fini_array    0x00001750        0x4 c:/freescale/kds_v3/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/armv6-m/crtbegin.o
-                0x00001754                PROVIDE (__fini_array_end, .)
-                0x00001754                __etext = .
-                0x00001754                __DATA_ROM = .
+ .fini_array    0x00001738        0x4 c:/freescale/kds_v3/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/armv6-m/crtbegin.o
+                0x0000173c                PROVIDE (__fini_array_end, .)
+                0x0000173c                __etext = .
+                0x0000173c                __DATA_ROM = .
 
 .mtb            0x1ffff000        0x0
                 0x1ffff000                . = ALIGN (0x8)
@@ -1020,56 +1020,56 @@ LOAD c:/freescale/kds_v3/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/armv6-m/cr
                 0x1ffff000                . = ALIGN (0x8)
                 0x1ffff000                _mtb_end = .
 
-.data           0x1ffff000      0xe9c load address 0x00001754
+.data           0x1ffff000      0x44c load address 0x0000173c
                 0x1ffff000                . = ALIGN (0x4)
                 0x1ffff000                __DATA_RAM = .
                 0x1ffff000                __data_start__ = .
  *(.data)
  *(.data*)
- .data.p        0x1ffff000      0xe38 ./Sources/main.o
+ .data.p        0x1ffff000      0x3e8 ./Sources/main.o
                 0x1ffff000                p
  .data.impure_data
-                0x1ffffe38       0x60 c:/freescale/kds_v3/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-impure.o)
+                0x1ffff3e8       0x60 c:/freescale/kds_v3/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/../../../../arm-none-eabi/lib/armv6-m\libg_s.a(lib_a-impure.o)
  *(.jcr*)
- .jcr           0x1ffffe98        0x0 c:/freescale/kds_v3/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/armv6-m/crtbegin.o
- .jcr           0x1ffffe98        0x4 c:/freescale/kds_v3/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/armv6-m/crtend.o
-                0x1ffffe9c                . = ALIGN (0x4)
-                0x1ffffe9c                __data_end__ = .
-                0x000025f0                __DATA_END = (__DATA_ROM + (__data_end__ - __data_start__))
+ .jcr           0x1ffff448        0x0 c:/freescale/kds_v3/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/armv6-m/crtbegin.o
+ .jcr           0x1ffff448        0x4 c:/freescale/kds_v3/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/armv6-m/crtend.o
+                0x1ffff44c                . = ALIGN (0x4)
+                0x1ffff44c                __data_end__ = .
+                0x00001b88                __DATA_END = (__DATA_ROM + (__data_end__ - __data_start__))
 
-.igot.plt       0x1ffffe9c        0x0 load address 0x000025f0
+.igot.plt       0x1ffff44c        0x0 load address 0x00001b88
  .igot.plt      0x00000000        0x0 c:/freescale/kds_v3/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/armv6-m/crtbegin.o
 
-.bss            0x1ffffe9c      0xe58 load address 0x000025f0
-                0x1ffffe9c                . = ALIGN (0x4)
-                0x1ffffe9c                __START_BSS = .
-                0x1ffffe9c                __bss_start__ = .
+.bss            0x1ffff44c      0x408 load address 0x00001b88
+                0x1ffff44c                . = ALIGN (0x4)
+                0x1ffff44c                __START_BSS = .
+                0x1ffff44c                __bss_start__ = .
  *(.bss)
- .bss           0x1ffffe9c       0x1c c:/freescale/kds_v3/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/armv6-m/crtbegin.o
+ .bss           0x1ffff44c       0x1c c:/freescale/kds_v3/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/armv6-m/crtbegin.o
  *(.bss*)
- .bss.count     0x1ffffeb8        0x4 ./Sources/main.o
-                0x1ffffeb8                count
+ .bss.count     0x1ffff468        0x4 ./Sources/main.o
+                0x1ffff468                count
  *(COMMON)
- COMMON         0x1ffffebc      0xe38 ./Sources/main.o
-                0x1ffffebc                destination
-                0x20000cf4                . = ALIGN (0x4)
-                0x20000cf4                __bss_end__ = .
-                0x20000cf4                __END_BSS = .
+ COMMON         0x1ffff46c      0x3e8 ./Sources/main.o
+                0x1ffff46c                destination
+                0x1ffff854                . = ALIGN (0x4)
+                0x1ffff854                __bss_end__ = .
+                0x1ffff854                __END_BSS = .
 
-.heap           0x20000cf4      0x404 load address 0x00003448
-                0x20000cf8                . = ALIGN (0x8)
- *fill*         0x20000cf4        0x4 
-                0x20000cf8                __end__ = .
-                0x20000cf8                PROVIDE (end, .)
-                0x20000cf8                __HeapBase = .
-                0x200010f8                . = (. + HEAP_SIZE)
- *fill*         0x20000cf8      0x400 
-                0x200010f8                __HeapLimit = .
+.heap           0x1ffff854      0x404 load address 0x00001f90
+                0x1ffff858                . = ALIGN (0x8)
+ *fill*         0x1ffff854        0x4 
+                0x1ffff858                __end__ = .
+                0x1ffff858                PROVIDE (end, .)
+                0x1ffff858                __HeapBase = .
+                0x1ffffc58                . = (. + HEAP_SIZE)
+ *fill*         0x1ffff858      0x400 
+                0x1ffffc58                __HeapLimit = .
 
-.stack          0x200010f8      0x400 load address 0x0000384c
-                0x200010f8                . = ALIGN (0x8)
-                0x200014f8                . = (. + STACK_SIZE)
- *fill*         0x200010f8      0x400 
+.stack          0x1ffffc58      0x400 load address 0x00002394
+                0x1ffffc58                . = ALIGN (0x8)
+                0x20000058                . = (. + STACK_SIZE)
+ *fill*         0x1ffffc58      0x400 
                 0x20003000                __StackTop = (ORIGIN (m_data) + 0x4000)
                 0x20002c00                __StackLimit = (__StackTop - STACK_SIZE)
                 0x20003000                PROVIDE (__stack, __StackTop)
@@ -1124,17 +1124,17 @@ LOAD c:/freescale/kds_v3/toolchain/bin/../lib/gcc/arm-none-eabi/4.8.4/armv6-m/cr
                 0x00000001                ASSERT ((__StackLimit >= __HeapLimit), region m_data overflowed with stack and heap)
 OUTPUT(DMA.elf elf32-littlearm)
 
-.debug_info     0x00000000     0x1c1a
- .debug_info    0x00000000      0x90b ./Sources/main.o
- .debug_info    0x0000090b       0x82 ./Project_Settings/Startup_Code/startup_MKL25Z4.o
- .debug_info    0x0000098d      0x3ed ./Project_Settings/Startup_Code/system_MKL25Z4.o
- .debug_info    0x00000d7a      0xea0 ./Includes/mcg.o
+.debug_info     0x00000000     0x1c23
+ .debug_info    0x00000000      0x914 ./Sources/main.o
+ .debug_info    0x00000914       0x82 ./Project_Settings/Startup_Code/startup_MKL25Z4.o
+ .debug_info    0x00000996      0x3ed ./Project_Settings/Startup_Code/system_MKL25Z4.o
+ .debug_info    0x00000d83      0xea0 ./Includes/mcg.o
 
-.debug_abbrev   0x00000000      0x4e3
- .debug_abbrev  0x00000000      0x200 ./Sources/main.o
- .debug_abbrev  0x00000200       0x14 ./Project_Settings/Startup_Code/startup_MKL25Z4.o
- .debug_abbrev  0x00000214      0x109 ./Project_Settings/Startup_Code/system_MKL25Z4.o
- .debug_abbrev  0x0000031d      0x1c6 ./Includes/mcg.o
+.debug_abbrev   0x00000000      0x4f0
+ .debug_abbrev  0x00000000      0x20d ./Sources/main.o
+ .debug_abbrev  0x0000020d       0x14 ./Project_Settings/Startup_Code/startup_MKL25Z4.o
+ .debug_abbrev  0x00000221      0x109 ./Project_Settings/Startup_Code/system_MKL25Z4.o
+ .debug_abbrev  0x0000032a      0x1c6 ./Includes/mcg.o
 
 .debug_aranges  0x00000000      0x1a8
  .debug_aranges
@@ -1194,11 +1194,11 @@ OUTPUT(DMA.elf elf32-littlearm)
  .debug_macro   0x00009ff6       0x4c ./Project_Settings/Startup_Code/system_MKL25Z4.o
  .debug_macro   0x0000a042       0x96 ./Includes/mcg.o
 
-.debug_line     0x00000000     0x162b
- .debug_line    0x00000000      0x402 ./Sources/main.o
- .debug_line    0x00000402       0x7b ./Project_Settings/Startup_Code/startup_MKL25Z4.o
- .debug_line    0x0000047d      0x240 ./Project_Settings/Startup_Code/system_MKL25Z4.o
- .debug_line    0x000006bd      0xf6e ./Includes/mcg.o
+.debug_line     0x00000000     0x162a
+ .debug_line    0x00000000      0x401 ./Sources/main.o
+ .debug_line    0x00000401       0x7b ./Project_Settings/Startup_Code/startup_MKL25Z4.o
+ .debug_line    0x0000047c      0x240 ./Project_Settings/Startup_Code/system_MKL25Z4.o
+ .debug_line    0x000006bc      0xf6e ./Includes/mcg.o
 
 .debug_str      0x00000000    0x35142
  .debug_str     0x00000000    0x34e28 ./Sources/main.o
