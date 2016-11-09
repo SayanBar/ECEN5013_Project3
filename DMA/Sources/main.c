@@ -42,9 +42,9 @@
 
 //#define buffer		5000
 
-char p[100]="AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA";
+char p[10]="AAAAAAAAA";
 volatile uint32_t count = 0;
-char destination[100];
+char destination[10];
 //destination=(int32_t *)malloc(8*sizeof(char));
 
 void uart_init()
@@ -158,7 +158,7 @@ void DMA_setup()
 	DMA_SAR0 =p;
 	DMA_DAR0 =destination;
 
-	DMA_DSR_BCR0  |= DMA_DSR_BCR_BCR(100);
+	DMA_DSR_BCR0  |= DMA_DSR_BCR_BCR(10);
 
 	DMA_DCR0 |= (DMA_DCR_SSIZE(1) | DMA_DCR_DSIZE(1));
 	DMA_DCR0 |= (DMA_DCR_SINC(1) | DMA_DCR_DINC(1));
