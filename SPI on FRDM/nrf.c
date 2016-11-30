@@ -2,7 +2,7 @@
  * spi0.c
  *
  *  Created on: 04-Nov-2016
- *      Author: Satyanarayana
+ *      Author: Sayan
  */
 #include "MKL25Z4.h"
 #include "nrf.h"
