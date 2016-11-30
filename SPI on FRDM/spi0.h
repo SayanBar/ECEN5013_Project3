@@ -2,7 +2,7 @@
  * spi0.h
  *
  *  Created on: 04-Nov-2016
- *      Author: Satyanarayana
+ *      Author: Sayan
  */
 
 #ifndef SOURCES_SPI0_H_
